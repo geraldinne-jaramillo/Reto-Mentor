@@ -1,12 +1,18 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Holi :)");
+
+        String firstName, lastName;
+        String careerSummary;
+        String SummaryQualifications;
+        String languages;
+        String careerHistory;
+        String companyName, companyCity, companyCoutry;
+        String companyResponsibilities;
+        LocalDate DatesWorked;
 
 
     }
