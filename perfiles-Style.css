@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.perfiles-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+}
+
+.profile-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; 
+    max-width: 350px;
+    min-width: 280px;
+    transition: transform 0.2s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.details-section h3 {
+    color: #007bff;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.details-section p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.skills-list span {
+    background-color: #e9f0ff;
+    color: #007bff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.boton-verMas {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.boton-verMas:hover {
+    background-color: #218838;
+}
