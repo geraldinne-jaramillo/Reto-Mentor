@@ -58,12 +58,14 @@ h1 {
     font-size: 1.1rem;
     margin-top: 15px;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .details-section p {
     margin: 4px 0;
     font-size: 0.95rem;
     color: #555;
+    text-align: center;
 }
 
 .skills-list {
@@ -71,6 +73,7 @@ h1 {
     flex-wrap: wrap; 
     gap: 8px;
     margin-top: 10px;
+    justify-content: center;
 }
 
 .skills-list span {
@@ -80,18 +83,7 @@ h1 {
     border-radius: 15px;
     font-size: 0.85rem;
     font-weight: bold;
-}
-
-.boton-verMas {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
+    align-items: center;
 }
 
 .boton-verMas:hover {
