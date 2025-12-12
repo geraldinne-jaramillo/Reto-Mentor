@@ -7,28 +7,73 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String firstName="Geraldine", lastName="Jaramillo";
-        String careerSummary="";
-        String summaryQualifications="This should be 2-3 lines long and include number of years experience, methodologies, frameworks, languages, projects and technologies worked on, and their role (any leadership positions?). As with the rest of the CV, this should be written in the 3rd person (eg, Juan led a team…).\n" +
-                "\n";
-        String languages;
-        String careerHistory;
-        String companyName, companyCity, companyCoutry;
-        String companyResponsibilities;
-        LocalDate datesWorked; //no puede tener valor se declara
+        //Color Ansi
+        String ANSI_PURPLE = "\u001B[35m";
+        String ANSI_WHITE = "\u001B[37m";
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_GREEN = "\u001B[32m";
+
+        String firstName = "Diego";
+        String lastName = "Osorno";
+        String careerSummary = "Diego is a professional with several years of experience in commercial areas and telecommunications.\n " +
+                "Although he has not held official leadership positions,\n" +
+                "He has demonstrated skills in project management and customer service.\n" +
+                "Recently,he completed official training in Quality Control at Globant and has empirical knowledge in Java and HTML";
+
+
+        String summaryQualifications= "Quality Control:" +
+                "Java, HTML, Css, Project Management, telecomunications";
+
+        String languages = "\nspanish native C1, English B1";
+        String careerHistory = "Teleperformance: Medellín, Colombia,\n" +
+                "Sales Advisor;\n" +
+                "Start Date: November 25, 2022 – End Date: February 9, 2023\n" +
+                "Focused on achieving tangible and intangible sales goals.\n" +
+                "Customer service and relationship management.\n";
+        String companyName = "\nTeleperformance\"", companyCity = "\nMedellín\"", companyCoutry = "\nColombia\"";
+        String companyResponsibilities = "Customer service and relationship management.\n" +
+                "Customer service and relationship management.\n";
+        LocalDate datesWorked = LocalDate.of(2023,03,03);
 
         boolean salir = false;
         int opcion;
 
         while (!salir){
-            System.out.println("LECTOR DE CV \n------------------");
+            System.out.println(ANSI_GREEN + "==================== " + ANSI_RESET + "LECTOR DE CV " + ANSI_GREEN+ "====================" + ANSI_RESET);
             System.out.println("1. Ver CV \n2. Editar CV \n3. Salir ");
             System.out.print("Digite una opcion: ");
             opcion = sc.nextByte();
 
             switch (opcion){
                 case 1:
-                    System.out.println("First Name "+ firstName );
+                    System.out.println(ANSI_GREEN + "===== " + ANSI_RESET + "PERSONAL INFORMATION" + ANSI_GREEN +" =====" + ANSI_RESET);
+                    System.out.println("\nFirst Name: " + firstName);
+                    System.out.println("Last Name: " + lastName);
+                    System.out.println();
+
+                    System.out.println(ANSI_GREEN + "===== " + ANSI_RESET + "CAREER SUMMARY" + ANSI_GREEN +" =====" + ANSI_RESET);
+                    System.out.println(careerSummary);
+                    System.out.println();
+
+                    System.out.println(ANSI_GREEN + "===== " + ANSI_RESET + "SUMMARY QUALIFICATIONS" + ANSI_GREEN +" =====" + ANSI_RESET);
+                    System.out.println(summaryQualifications);
+                    System.out.println();
+
+                    System.out.println(ANSI_GREEN + "===== " + ANSI_RESET + "LANGUAGES" + ANSI_GREEN +" =====" + ANSI_RESET);
+                    System.out.println(languages);
+                    System.out.println();
+
+                    System.out.println(ANSI_GREEN + "===== " + ANSI_RESET + "CAREER HISTORY" + ANSI_GREEN +" =====" + ANSI_RESET);
+                    System.out.println(careerHistory);
+                    System.out.println();
+
+                    System.out.println(ANSI_GREEN + "===== " + ANSI_RESET + "COMPANY DETAILS: " + ANSI_GREEN +" =====" + ANSI_RESET);
+                    System.out.println(ANSI_GREEN + "Company Name: " + ANSI_RESET + companyName);
+                    System.out.println(ANSI_GREEN + "City: " + ANSI_RESET + companyCity);
+                    System.out.println(ANSI_GREEN + "Country: " + ANSI_RESET + companyCoutry);
+                    System.out.println(ANSI_GREEN + "Responsibilities: " + ANSI_RESET + companyResponsibilities);
+                    System.out.println(ANSI_WHITE + "--------------------------------------------------------------------------------\n" + ANSI_RESET);
+
                     break;
 
                 case 2:
